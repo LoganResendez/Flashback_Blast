@@ -35,9 +35,10 @@ h1, h2{font-family:"Kaushan Script", cursive;}
 #pageheader a{display:inline-block;}
 #pageheader h1
 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     color:white;
     text-align:center;
+    white-space:nowrap;
 }
 #links
 {
