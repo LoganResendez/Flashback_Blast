@@ -6,12 +6,12 @@
     padding:0;
     margin:0;
 }
-h1{font-family:"Kaushan Script", cursive;}
-p{
+body{
     font-family: "Cormorant Upright", serif;
     font-weight: 400;
     font-style: normal;
 }
+h1, h2{font-family:"Kaushan Script", cursive;}
 
 /* header */
 #pageheader
@@ -44,7 +44,6 @@ p{
     display: flex;
     gap:15%;
     justify-content:center;
-    list-style-type:none;
     flex-basis:100%;
 }
 #links a{font-size:1.5rem;}
@@ -55,61 +54,225 @@ a
 }
 a:hover
 {
-    color:#7D2B2B;
+    color:rgb(241, 234, 234);
     transition:all .1s;
 }
-
+a:active{color: #7D2B2B;}
 /* background */
 #background
 {
     width:100%;
     height:100vh;
-    background-image:url(Images/background.jpg);
-    background-position:right;
+    background-image:url(Images/hero.webp);
+    background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
-
+    background-attachment:fixed;
 }
-#gName
-{
-    position:absolute;
-    top:20%;
-    left:0%;
-    right:0%;
-    margin:auto;
-    width:80%;
-}
-
+/* About */
 #about{
     /* background-color: #3F2022;  */
     background: #1E2626;
-    background: linear-gradient(0deg, #232C2A 0%, #000 100%);
+    /* background: linear-gradient(0deg, #232C2A 0%, #000 100%); */
+    background: linear-gradient(
+  180deg,
+  #0E0E0E 0%,
+  #232323 100%
+);
     scroll-margin-top:90px;
+    min-height:calc(100vh - 90px);
 }
-#about h1
+#aboutCon{max-width:1200px;}
+#logo
+{
+    display:block;
+    margin:auto;
+    width:80%;
+    max-width:500px;
+}
+#about h2
 {
     color:white;
     padding:1rem;
-    font-size:2.5rem;
+    font-size:2.3rem;
+    text-align:center;
 }
 #about p
 {
     color:white;
-    font-size:1.2rem;
+    font-size:1.3rem;
+    margin:.5rem 2rem;
 }
 #conceptart001
 {
-    width:40%;
-    min-width:400px;
+    width:80%;
+    min-width:200px;
+    max-width:500px;
+    margin:auto;
+    display:block;
+}
+/* Concepts */
+#concepts
+{
+    background-image:url(Images/background2.webp);
+    background-attachment:fixed;
+    background-size:cover;
+    min-height:calc(100vh - 90px);
+    padding-bottom: 2rem;
+    scroll-margin-top:90px;
+    overflow-y:auto;
+    overscroll-behavior:auto;
+}
+#concepts h2
+{
+    color:white;
+    font-size:2.3rem;
+    text-align:center;
+}
+#ccbox
+{
+    display:flex;
+    justify-content:space-evenly;
+    margin:1rem;
+    flex-wrap:wrap;
+}
+.conceptCard
+{
+    color:white;
+    font-size:2rem;
+    flex-basis:30%;
+    min-width:300px;
+    border:2px solid white;
+    background-color:rgba(0, 0, 0, .8);
+    padding:1rem;
+    margin-bottom:1rem;
+    text-align:center;
+    transform: scale(1);
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+.conceptCard h3
+{
+    font-size:1.8rem;
+}
+.conceptCard img
+{
+    height:40px;
+}
+.hide-card {
+    display: none;
 }
 
+.conceptCard:hover:not(.active) {
+    cursor: pointer;
+    background-color: rgba(22, 22, 22, 0.9);
+    transform: scale(1.05);
+}
+
+.conceptCard.active {
+    transform: scale(1.1);
+    background-color: rgba(38, 37, 37, 0.9);
+    cursor: pointer;
+}
+#corruption, #rebellion, #heaven{transition:all .8s;}
+#conceptInfoCon {
+    position: relative;
+    width: 100%;
+    min-height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#conceptInfo {
+    color: white;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    width: 90%;
+    max-width:1000px;
+    min-height: 200px;
+    padding:1rem;
+    position: absolute;
+    top:10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(22, 22, 22, 0.9);
+    transform: translateX(-100vw);
+    opacity: 0;
+}
+#space
+{
+    width: 90%;
+    max-width:1000px;
+    min-height: 200px;
+    position: absolute;
+    bottom:-300%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display:none;
+}
+#wandering
+{
+    height:200px;
+    display:block;
+    margin:auto;
+}
+.concept
+{
+    animation-name: concept;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes concept
+{
+    100%
+    {
+        visibility: visible;
+        margin:auto;
+        left:0;
+        right:0;
+        
+    }
+}
+.concept-show {
+    animation: slideIn 0.5s ease forwards;
+}
+.concept-hide {
+    animation: slideOut 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+}
 /* Visuals */
 #visuals
 {
     background: #000;
     background: linear-gradient(0deg, #000 0%, #232C2A 100%);
+    scroll-margin-top:90px;
+    padding:0 1rem;
+    min-height:calc(100vh - 90px);
 }
-#visuals h1
+#visuals h2
 {
     color:white;
     text-align:center;
@@ -126,16 +289,19 @@ a:hover
     display: none;
     text-align: left;
 }
-
+#visualsCon{padding:0; margin:0; margin: auto;}
 .slide img {
     width: 100%;
-    height:auto;
+    aspect-ratio:1/.75;
 }
 
 .caption {
     margin-top: 10px;
     font-size: 1.3rem;
     color:white;
+    width:100%;
+    max-width:1000px;
+    margin:auto;
 }
 
 .slide.active {
@@ -160,13 +326,12 @@ a:hover
 .prev:hover, .next:hover {
     background: rgba(0,0,0,0.8);
 }
-
 /* Footer */
 footer
 {
     padding:1rem;
 }
-#footerlinks
+#footerText
 {
     list-style-type:none;
     display:flex;
@@ -177,11 +342,12 @@ footer
     font-style: normal;
     font-size:1.3rem;
 }
-#footerlinks a
+#footerText a
 {
     color:black;
     text-decoration:none;
 }
+#footerText a:hover{color: #7D2B2B;}
 footer p
 {
     text-align:center;
@@ -191,7 +357,7 @@ footer p
 /* Classes */
 .container
 {
-    width:80%;
+    width:100%;
     margin:auto;
     max-width:1400px;
     padding:2rem .5rem;
@@ -201,15 +367,22 @@ footer p
 @media screen and (min-width:780px)
 {
     #links{flex-basis:50%;}    
+    .container{width:85%;}
+    #visualsCon{padding:2rem .5rem;}
+    #conceptInfo{font-size:1.5rem;}
+    #conceptCard h3{font-size:2rem;}
+    #visuals h2, #concepts h2, #about h2{font-size:3rem;}
+    #space
+    {
+        display:none;
+    }
+    .slide img{aspect-ratio:1/.5;}
 }
 @media screen and (min-width:1000px)
 {
-    #gName
+    #logo
     {
-        top:20%;
-        left:20%;
-        right:auto;
-        width:40%;
+        width:70%;
     }
     .floatRight
     {
@@ -218,4 +391,18 @@ footer p
         padding-left:1rem;
         padding-bottom:1rem;
     }
+    .floatLeft
+    {
+        float:left;
+        clear:both;
+        padding-right:1rem;
+        padding-bottom:1rem;
+    }
+}
+@media screen and (min-width:1000px) {
+    .conceptCard.hide-card {display: none;}
+    .conceptCard img
+{
+    height: 80px;
+}
 }

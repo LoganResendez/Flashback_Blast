@@ -11,56 +11,75 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <p></p><link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- header -->
     <header id="pageheader">
         <div id="title"><h1><a href="index.html">Flashback Blast</a></h1></div>
-        <ul id="links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#visuals">Visuals</a></li>
-            <li><a href="#concepts">Concepts</a></li>
-        </ul>
+        <nav id="links">
+            <a href="#about">About</a>
+            <a href="#concepts">Concepts</a>
+            <a href="#visuals">Visuals</a>
+        </nav>
     </header>
-    <!-- background -->
-    <div id="background">
-        <img src="Images/title.png" alt="Black Myth Wukong" id="gName">
-    </div>
-    <!-- info -->
-     <div id="about">
-        <div class="container">
-            <h1>About The Game</h1>
-            <img src="Images/conceptart001.png" alt="" id="conceptart001" class="floatRight">
-            <p>Black Myth Wukong is a game that released in 2024 and is based on the story, "Journey to the West." The player controls the "Destined One," a monkey attempting to reclaim six scattered relics containing Sun Wukong's lost senses. In a world with monsters, gods, and magic, the game explores Chinese culture and mythology without much regard for historical accuracy. However, there are many allusions and small details that give insight to Chinese history.</p>
-            <br>
-            <p>The tale "Journey to the West" originates from the 16th century, during the reign of the Ming Dynasty in China. Although initially published anonymously, it is believed to have been written by Wu Cheng'en, a novelist and poet. It is in a way a political satire and is considered to be one of the most popular literary works of East Asia; it is a tale of enlightenment, redemption, and human nature. The story is interpreted to be a critique of the bureaucracy and corruption of the Ming Dynasty, giving it importance in a historical and cultural aspect. </p>
-            <br>
-            <p>Needless to say, the game is not entirely accurate to the original story, and is, of course, not necessarily a reflection of Chinese history. There are, however, plenty of references to the true story in this retelling that give it value in a cultural sense. In addition, the architecture, clothing, and just overall style of the game are similar to that of China in the Ming Dynasty. In these rights, there is a plethora of elements of the game that are remnants of the history we study in HIST 80, and this website will focus primarily on these details present in the game rather than analyzing "Journey to the West".</p>
-        </div>
-     </div>
-     <!-- Allusions -->
-      <div id="visuals">
-        <div class="container">
-            <h1>Visuals</h1>
-            <div class="slideshow">
-                <div class="slides-container"></div>
+    <main>
+        <!-- background -->
+
+            <section id="background"></section>
+        <!-- info -->
+         <section id="about">
+            <div class="container" id="aboutCon">
+                <h2>About The Series</h2>
+                <img src="Images/logo.webp" alt="Akame Ga Kill" id="logo" class="floatRight">
+                <img src="Images/conceptart001.png" alt="" id="conceptart001" class="floatRight">
+                <p>Akame Ga Kill is an anime that aired from 2014-201 that follows the story of Tatsumi, a clueless peasant that embarks on a journey to the capital to earn money and ultimately save his rural village. He soon realized the corrupt nature of the capital and the very foundations of the empire he lives in, discovering that the emperor is only a child, manipulated by a corrupt minister. After witnessing the death of his friends at the hands of twisted nobles, he is recruited a group of Assassins known as "<b>Night Raid</b>," who are affiliated with the revolutionary army and fight to overthrow the wicked empire.</p>
+                <br>
+                <p>This fictional world is inspired by real world events and concepts, but has supernatural elements as well. <b>Imperial Arms</b> are powerful weapons created 1000 years ago by the first emperor of this empire, crafted from the remains of mythical Danger Beasts and capable of inhuman feats. Every member of Night Raid has an Imperial Arm, making them the backbone of the resistance against the empire. </p>
+                <br>
+                <p>The empire, of course, is also in possession of many of these Imperial Arms as well. Existing as a militaristic state, the empire additionally quarrels with tribes in all directions as it attempts to conquer and expand. They use the strength of their forces as justification for their rule and do as they please. The minister acts as a shadow-leader of sorts, using the impressionable emperor to act out on his most depraved and inhumane desires. This corruption has plagued the empire for centuries; it is time for a revolution to end the cycle of cruelty and abuse.</p>
+                <br>
+                <p>Although there are fictional elements of this series, there are many real-world ideas at play, and an uncanny resemblance to certain historical events of Chinese civilization. The concepts of empires, ministers, wars, rebellions, hierarchy, bureaucracy, control, corruption, and so much more connect Akame Ga Kill to Chinese history.</p>
+            </div>
+         </section>
+         <!-- Concepts -->
+           <section id="concepts">
+                <h2>Concepts</h2>
+                <div id="ccbox">
+                    <div class="conceptCard" onclick="cc1Go()" id="cc1">
+                        <img src="Images/crown.png" alt="Crown"> <br>
+                        <h3>Child Emperor and Minister</h3>
+                    </div>
+                    <div class="conceptCard" onclick="cc2Go()" id="cc2">
+                        <img src="Images/chain.png" alt="Broken chain"> <br>
+                        <h3>Rebellion and Corruption</h3>
+                    </div>
+                    <div class="conceptCard" onclick="cc3Go()" id="cc3">
+                        <img src="Images/bure.png" alt="Bureaucracy scales"> <br>
+                        <h3>Centralization and Bureaucracy</h3>
+                    </div>
+                    <div id ="conceptInfoCon"><div id="conceptInfo"></div><div id="space"></div></div>
+                </div>
+           </section>
+         <!-- Visuals -->
+          <section id="visuals">
+            <div class="container" id="visualsCon">
+                <h2>Visuals</h2>
+                <div class="slideshow">
+                    <div class="slides-container"></div>
+        
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
     
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </div> 
-        </div>
-      </div>
-      <!-- Concepts -->
-       <div id="concepts">
-        <div class="container">
-            <h1>Concepts</h1>
-        </div>
-       </div>
+                </div> 
+                <p class="caption"></p>
+            </div>
+          </section>
+    </main>
      <!-- footer -->
       <footer id="pagefooter">
-        <ul id="footerlinks">
-            <li><a href="loganresendez@ucsb.edu">loganresendez@ucsb.edu</a></li>
+        <ul id="footerText">
+            <li><a href="mailto:loganresendez@ucsb.edu">loganresendez@ucsb.edu</a></li>
             <li>|</li>
             <li>HIST 80</li>
             <li>|</li>
