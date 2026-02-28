@@ -35,7 +35,7 @@ h1, h2{font-family:"Kaushan Script", cursive;}
 #pageheader a{display:inline-block;}
 #pageheader h1
 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color:white;
     text-align:center;
 }
@@ -67,7 +67,7 @@ a:active{color: #7D2B2B;}
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
-    background-attachment:fixed;
+    background-attachment:scroll;
 }
 /* About */
 #about{
@@ -115,7 +115,7 @@ a:active{color: #7D2B2B;}
 #concepts
 {
     background-image:url(Images/background2.webp);
-    background-attachment:fixed;
+    background-attachment:scroll;
     background-size:cover;
     min-height:calc(100vh - 90px);
     padding-bottom: 2rem;
@@ -369,14 +369,14 @@ footer p
     #links{flex-basis:50%;}    
     .container{width:85%;}
     #visualsCon{padding:2rem .5rem;}
+    #concepts{background-attachment: fixed;}
     #conceptInfo{font-size:1.5rem;}
     #conceptCard h3{font-size:2rem;}
     #visuals h2, #concepts h2, #about h2{font-size:3rem;}
-    #space
-    {
-        display:none;
-    }
+    #pageheader h1{font-size:2.5rem;}
+    #space{display:none;}
     .slide img{aspect-ratio:1/.5;}
+    #background{background-attachment: fixed;}
 }
 @media screen and (min-width:1000px)
 {
