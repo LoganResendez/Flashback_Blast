@@ -341,7 +341,7 @@ footer
     font-family: "Cormorant Upright", serif;
     font-weight: 400;
     font-style: normal;
-    font-size:1.3rem;
+    font-size:1rem;
 }
 #footerText a
 {
@@ -352,7 +352,7 @@ footer
 footer p
 {
     text-align:center;
-    font-size:1.3rem;
+    font-size:1rem;
 }
 
 /* Classes */
@@ -378,6 +378,7 @@ footer p
     #space{display:none;}
     .slide img{aspect-ratio:1/.5;}
     #background{background-attachment: fixed;}
+    #footerText, footer p{font-size:1.3rem;}
 }
 @media screen and (min-width:1000px)
 {
