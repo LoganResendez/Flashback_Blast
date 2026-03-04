@@ -201,18 +201,7 @@ a:active{color: #7D2B2B;}
     transform: translateX(-100vw);
     opacity: 0;
 }
-#space
-{
-    width: 90%;
-    max-width:1000px;
-    min-height: 200px;
-    position: absolute;
-    bottom:-300%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    display:none;
-}
+
 #wandering
 {
     height:200px;
@@ -375,7 +364,6 @@ footer p
     #conceptCard h3{font-size:2rem;}
     #visuals h2, #concepts h2, #about h2{font-size:3rem;}
     #pageheader h1{font-size:2.5rem;}
-    #space{display:none;}
     .slide img{aspect-ratio:1/.5;}
     #background{background-attachment: fixed;}
     #footerText, footer p{font-size:1.3rem;}
