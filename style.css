@@ -102,14 +102,6 @@ a:active{color: #7D2B2B;}
     font-size:1.1rem;
     margin:.5rem 2rem;
 }
-#conceptart001
-{
-    width:80%;
-    min-width:200px;
-    max-width:500px;
-    margin:auto;
-    display:block;
-}
 /* Concepts */
 #concepts
 {
@@ -117,7 +109,7 @@ a:active{color: #7D2B2B;}
     background-attachment:scroll;
     background-size:cover;
     min-height:calc(100vh - 90px);
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
     scroll-margin-top:90px;
     overflow-y:auto;
     overscroll-behavior:auto;
@@ -127,6 +119,7 @@ a:active{color: #7D2B2B;}
     color:#f2efea;
     font-size:2.3rem;
     text-align:center;
+    padding-top:1rem;
 }
 #ccbox
 {
@@ -261,7 +254,7 @@ a:active{color: #7D2B2B;}
 {
     color:#f2efea;
     text-align:center;
-    font-size:2.5rem;
+    font-size:2.3rem;
 }
 .slideshow {
     position: relative;
@@ -314,12 +307,9 @@ a:active{color: #7D2B2B;}
 /* Conclusion */
 #conclusion
 {
+    min-height:calc(100vh - 90px);
     background: #1E2626;
-    background: linear-gradient(
-    180deg,
-    #232323 0%,
-    #0E0E0E 100%
-    );
+    background: linear-gradient(180deg, #232323 0%, #0E0E0E 100%);
     scroll-margin-top:90px;
 }
 #conclusionCon{max-width:1200px;}
@@ -400,8 +390,8 @@ footer p
     #pageheader h1{font-size:2.5rem;}
     .slide img{aspect-ratio:1/.5;}
     #background{background-attachment: fixed;}
-    #footerText, footer p{font-size:1.3rem;}
-    #about p, #conclusion p{font-size:1.3rem;}
+    #footerText, footer p, #about p, #conclusion p{font-size:1.3rem;}
+
 }
 @media screen and (min-width:1000px)
 {
