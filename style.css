@@ -29,28 +29,28 @@ h1, h2{font-family:"Kaushan Script", cursive;}
     font-family:"Kaushan Script", cursive;
     flex-wrap:wrap;
     z-index:999;
-    border-bottom:2px solid white;
+    border-bottom:2px solid #f2efea;
 }
 #title{flex-basis:50%;}
 #pageheader a{display:inline-block;}
 #pageheader h1
 {
     font-size: 2.3rem;
-    color:white;
+    color:#f2efea;
     text-align:center;
     white-space:nowrap;
 }
 #links
 {
     display: flex;
-    gap:15%;
+    gap:5%;
     justify-content:center;
     flex-basis:100%;
 }
 #links a{font-size:1.5rem;}
 a
 {
-    color:white;
+    color:#f2efea;
     text-decoration:none;
 }
 a:hover
@@ -72,14 +72,12 @@ a:active{color: #7D2B2B;}
 }
 /* About */
 #about{
-    /* background-color: #3F2022;  */
     background: #1E2626;
-    /* background: linear-gradient(0deg, #232C2A 0%, #000 100%); */
     background: linear-gradient(
-  180deg,
-  #0E0E0E 0%,
-  #232323 100%
-);
+    180deg,
+    #0E0E0E 0%,
+    #232323 100%
+    );
     scroll-margin-top:90px;
     min-height:calc(100vh - 90px);
 }
@@ -93,14 +91,14 @@ a:active{color: #7D2B2B;}
 }
 #about h2
 {
-    color:white;
+    color:#f2efea;
     padding:1rem;
     font-size:2.3rem;
     text-align:center;
 }
 #about p
 {
-    color:white;
+    color:#f2efea;
     font-size:1.1rem;
     margin:.5rem 2rem;
 }
@@ -126,7 +124,7 @@ a:active{color: #7D2B2B;}
 }
 #concepts h2
 {
-    color:white;
+    color:#f2efea;
     font-size:2.3rem;
     text-align:center;
 }
@@ -139,11 +137,11 @@ a:active{color: #7D2B2B;}
 }
 .conceptCard
 {
-    color:white;
+    color:#f2efea;
     font-size:2rem;
     flex-basis:30%;
     min-width:300px;
-    border:2px solid white;
+    border:2px solid #f2efea;
     background-color:rgba(0, 0, 0, .8);
     padding:1rem;
     margin-bottom:1rem;
@@ -185,9 +183,9 @@ a:active{color: #7D2B2B;}
     align-items: flex-start;
 }
 #conceptInfo {
-    color: white;
+    color: #f2efea;
     font-size: 1.2rem;
-    border: 1px solid white;
+    border: 1px solid #f2efea;
     width: 90%;
     max-width:1000px;
     min-height: 200px;
@@ -200,13 +198,6 @@ a:active{color: #7D2B2B;}
     background-color: rgba(22, 22, 22, 0.9);
     transform: translateX(-100vw);
     opacity: 0;
-}
-
-#wandering
-{
-    height:200px;
-    display:block;
-    margin:auto;
 }
 .concept
 {
@@ -256,15 +247,19 @@ a:active{color: #7D2B2B;}
 /* Visuals */
 #visuals
 {
-    background: #000;
-    background: linear-gradient(0deg, #000 0%, #232C2A 100%);
+    background: #1E2626;
+    background: linear-gradient(
+    180deg,
+    #0E0E0E 0%,
+    #232323 100%
+    );
     scroll-margin-top:90px;
     padding:0 1rem;
     min-height:calc(100vh - 90px);
 }
 #visuals h2
 {
-    color:white;
+    color:#f2efea;
     text-align:center;
     font-size:2.5rem;
 }
@@ -288,7 +283,7 @@ a:active{color: #7D2B2B;}
 .caption {
     margin-top: 10px;
     font-size: 1.3rem;
-    color:white;
+    color:#f2efea;
     width:100%;
     max-width:1000px;
     margin:auto;
@@ -303,7 +298,7 @@ a:active{color: #7D2B2B;}
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0,0,0,0.5);
-    color: white;
+    color: #f2efea;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -315,6 +310,45 @@ a:active{color: #7D2B2B;}
 
 .prev:hover, .next:hover {
     background: rgba(0,0,0,0.8);
+}
+/* Conclusion */
+#conclusion
+{
+    background: #1E2626;
+    background: linear-gradient(
+    180deg,
+    #232323 0%,
+    #0E0E0E 100%
+    );
+    scroll-margin-top:90px;
+}
+#conclusionCon{max-width:1200px;}
+#conclusion h2
+{
+    color:#f2efea;
+    font-size:2.3rem;
+    text-align:center;
+    padding:1rem;
+}
+#conclusion p
+{
+    color:#f2efea;
+    font-size:1.1rem;
+    margin:.5rem 2rem;
+}
+#creator{padding-bottom:1rem;}
+#creator, #creator img
+{
+    width:90%;
+    max-width:600px;
+    margin:auto;
+    display:block;
+}
+#creator figcaption
+{
+    color:#f2efea;
+    text-align:center;
+    font-style:italic;
 }
 /* Footer */
 footer
@@ -362,19 +396,18 @@ footer p
     #concepts{background-attachment: fixed;}
     #conceptInfo{font-size:1.5rem;}
     #conceptCard h3{font-size:2rem;}
-    #visuals h2, #concepts h2, #about h2{font-size:3rem;}
+    #visuals h2, #concepts h2, #about h2, #conclusion h2{font-size:3rem;}
     #pageheader h1{font-size:2.5rem;}
     .slide img{aspect-ratio:1/.5;}
     #background{background-attachment: fixed;}
     #footerText, footer p{font-size:1.3rem;}
-    #about p{font-size:1.3rem;}
+    #about p, #conclusion p{font-size:1.3rem;}
 }
 @media screen and (min-width:1000px)
 {
-    #logo
-    {
-        width:70%;
-    }
+    #logo{width:70%;}
+    #creator{padding-left:1rem; width:60%;}
+    #creator img{width:100%;}
     .floatRight
     {
         float:right;

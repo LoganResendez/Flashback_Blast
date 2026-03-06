@@ -77,7 +77,7 @@ function activateCard(card, newContent) {
 
 function cc1Go() {
     activateCard(cc1, `
-        <p>The empire depicted in <i>"Akame ga Kill!"</i> places a child emperor named Makoto on the throne, though he functions merely as a figurehead while Prime Minister Honest exercises real authority. The Minister's corruption and brutality define the Empire's governance, yet the young Emperor remains unaware of the suffering carried out in his name, sincerely believing the state to be just and prosperous. This dynamic closely resembles moments in Chinese history, particularly during the reign of Emperor Ling of Han, when court eunuchs dominated political power, monopolized authority, executed rivals, and extracted wealth from the population. In both cases, the ruler's isolation from reality allowed corruption to flourish unchecked. The Emperor's ignorance is not just naivety, but a structural flaw in which information and authority are filtered through the elite with their interests put first. These patterns reflect broader political themes found in Chinese history, where moral decay at the center of power often signaled the end of a dynasty's legitimacy.</p>
+        <p>The empire depicted in <i>"Akame ga Kill!"</i> places a child emperor named Makoto on the throne, though he functions merely as a figurehead while Prime Minister Honest holds all the real power. The Minister's corruption and brutality define the Empire's governance, yet the young Emperor remains unaware of the suffering carried out in his name, sincerely believing the state to be just and prosperous. This dynamic closely resembles moments in Chinese history, particularly during the reign of Emperor Ling of Han, when eunuchs dominated political power, executed rivals, and extracted wealth from the population. In both cases, the ruler's isolation from reality allowed corruption to flourish unchecked. The Emperor's ignorance is not just naivety, but a structural flaw in which information and authority are filtered through the elite who put their interests first. The inspiration for the Emperor and Minister was actually Emperor Xian and Dong Zhuo from the Han dynasty, a duo with a very similar backstory and relationship. These patterns reflect broader political themes found in Chinese history, where moral decay at the center of power often signaled the end of a dynasty's legitimacy.</p>
     `);
 }
 
@@ -89,7 +89,7 @@ function cc2Go() {
 
 function cc3Go() {
     activateCard(cc3, `
-        <p>The empire depicted in <i>"Akame ga Kill!"</i> is an intensely centralized monarchy structured around rigid hierarchy, bureaucracy, and class stratification. In theory, the Emperor possesses absolute authority and may enact laws at will, though in practice that authority is often manipulated by those surrounding the throne. Bureaucrats and nobles wield considerable influence, yet their power remains subordinate to the sovereign and can be revoked through execution or punishment at any moment. The legal system is severe and frequently designed to deter dissent through public displays of cruelty. Political and economic power is concentrated in the capital, which extracts resources from surrounding provinces to sustain elite interests. This structure closely parallels aspects of several Chinese dynasties, particularly the Qin and early Ming. The Qin dynasty, guided by Legalist principles built by figures such as Shang Yang and Li Si, centralized authority, standardized administration, and employed harsh punishments to enforce order. Similarly, the early Ming period under the Hongwu Emperor concentrated power directly in the hands of the emperor and maintained strict oversight over officials, at times enforcing discipline through scoldings and beating. Although the Ming abolished the formal position of prime minister, the broader pattern of extreme centralization and bureaucracy reflects the political system in <i>"Akame ga Kill!"</i></p>
+        <p>The empire depicted in <i>"Akame ga Kill!"</i> is an intensely centralized monarchy structured around rigid hierarchy, bureaucracy, and class stratification. In theory, the Emperor possesses absolute authority and may enact laws at will, though in practice that authority is often manipulated by those surrounding the throne. Bureaucrats and nobles wield considerable influence, yet their power remains minimal to the Emperor and can be revoked through execution or punishment at any moment. The legal system is severe and frequently designed to prevent opposition through public displays of cruelty. Political and economic power is concentrated in the capital, which takes resources from surrounding provinces to sustain the interests of the elites. This structure closely parallels aspects of several Chinese dynasties, particularly the Qin and early Ming. The Qin dynasty, guided by Legalist principles built by figures such as Shang Yang and Li Si, had centralized authority and standardized measurements, and employed harsh punishments to enforce order. Similarly, the early Ming period under the Hongwu Emperor concentrated power directly in the hands of the emperor and maintained strict oversight over officials, at times enforcing discipline through scoldings and beating. Although the Ming abolished the formal position of prime minister, the broader pattern of extreme centralization and bureaucracy reflects the political system in <i>"Akame ga Kill!"</i></p>
     `);
 }
 
@@ -119,6 +119,16 @@ const slidesData = [
         image: "Images/capital.webp",
         alt: "The Royal Capital",
         description: "The Royal Capital is the backbone of the Empire, infested with the imperial guard and scummy bureaucrats. The wealthy folks of the capital are prosperous, while the working class struggle to get by and are treated like cattle. Even worse off are those of rural villages, neglected and abandoned by the elite and yet still taxed to the point where they earn no profit."
+    },
+    {
+        image: "Images/dongZhouEmperorXian.webp",
+        alt: "Dong Zhuo and Emperor Xian",
+        description: "Dong Zhuo and Emperor Xian were the inspirations for the characters of Minister Honest and Emperor Makoto. Similar to the Minister, Dong Zhuo disposed of the current emperor to install a child — Emperor Xian — who could act as a puppet ruler. Dong Zhuo and the Minister were ultimately led to the same fate, as they were both assassinated for their cruelty and tyranny."
+    },
+    {
+        image: "Images/redTurban.jpeg",
+        alt: "The Red Turban Rebellion",
+        description: "The Red Turban Rebellion was a revolt against the Yuan Dynasty between the years of 1351 and 1368. Economic hardship, famine, corrupt rule, and the formation of the religious group called the White Lotus Society led to this rebellion. "
     }
 ];
 
